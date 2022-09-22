@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>ATM Machine</title>
+  <!-- Don't use this in production: -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- ----------------- Bootstrap header START ----------------- -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  
+  <style>
+    body {
+      margin: 20px;
+    }
+    button {
+      background-color: #0c80f3;
+      border: 6px solid #0ff166;
+      border-radius: 10px;
+      width: 150px;
+    }
+    h2 {
+      color: rgb(228, 178, 178);
+    }
+    h3 {
+      color: #5483b1;
+    }
+    #submit-input {
+      background-color: #6ca080;
+      border-radius: 5px;
+      border: none;
+      margin-left: 5px;
+      padding: 4px;
+      color: beige;
+    }
+    #submit-input:disabled {
+      background-color: rgba(168, 168, 168, 0.829);
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1 style="font-family: Arial">ATM Machine</h1>
+  <!-- We will put our React component inside this div. -->
+  <div id="root"></div>
+
+  <!-- Load React. -->
+  <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+  <!-- Load our React component. -->
+
+  <script src="atm.jsx" defer type="text/babel"></script>
+</body>
+<!-- this right above is the jsx that is loaded -->
+
+</html>
